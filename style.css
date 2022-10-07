@@ -1,0 +1,82 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, auto) 1fr;
+    grid-template-areas: "navbar content";
+  }
+  
+  #main-doc {
+    grid-area: content;
+  }
+  
+  #navbar {
+    grid-area: navbar;
+    position: fixed;
+    font-size: 20px;
+    font-family: roboto, sans-serif;
+  }
+  
+  .nav-link {
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #7B8274;
+  }
+  
+  #python {
+    padding: 10px;
+    padding-left: 35px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: roboto, sans-serif;
+    font-size: 25px;
+  }
+  
+  h2 {
+    font-family: roboto, sans-serif;
+  }
+  
+  p {
+    color: #545454;
+    font-family: roboto, sans-serif;
+  }
+  
+  li {
+    color: #545454;
+    font-family: roboto, sans-serif;
+  }
+  
+  code {
+    display: block;
+    text-align: left;
+    line-height: 2;
+    background-color: #ECECEC;
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "navbar" "content";
+    }
+  
+    #navbar {
+      position: inherit;
+    }
+  }
+  #reference-link {
+    color: #7B8274;
+  }
+  
+  h5 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #7B8274;
+  }
